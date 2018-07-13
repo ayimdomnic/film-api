@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    
+
 	<title> LaraFlix | A Test for codeline.io </title>
 
 </head>
@@ -17,12 +17,12 @@
 	  </a>
 	  	<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
 	  		<li class="nav-item">
-		      <a class="nav-item nav-link mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      <a class="nav-item nav-link mr-md-2" href="{{ route('login')}}" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		        login
 		      </a>
 		    </li>
 		    <li class="nav-item">
-		      <a class="nav-item nav-link mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      <a class="nav-item nav-link mr-md-2" href="{{ route('register')}}" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		        Register
 		      </a>
 		    </li>

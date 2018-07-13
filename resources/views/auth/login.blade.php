@@ -15,13 +15,16 @@
 		  <div class="form-group">
 		    <label for="email">Email address: </label>
 		    <input type="email" class="form-control" id="email" name="email" value="{{ old('email')}}" aria-describedby="emailHelp" placeholder="Enter email">
-		    @foreach ($errors->all() as $error)
-                <small id="errorHelp" class="form-text text-muted">{{ $error }}</small>
-            @endforeach
+		    @if ($errors->has('email'))
+                <small id="errorHelp" class="form-text text-muted">{{ $error->first('email') }}</small>
+            @endif
 		  </div>
 		  <div class="form-group">
 		    <label for="password">Password</label>
 		    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+		    @if ($errors->has('password'))
+                <small id="errorHelp" class="form-text text-muted">{{ $error->first('password') }}</small>
+            @endif
 		  </div>
 		  <div class="form-group form-check">
 		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
