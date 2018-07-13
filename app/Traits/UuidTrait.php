@@ -16,10 +16,9 @@ trait UuidTrait
 	{
 		static::creating(function($model){
 			if (empty($model->uuid)) {
-				# code...
 				$model->uuid = (string) Str::uuid();
 			}
-		})
+		});
 	}
     
 }

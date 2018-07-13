@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('films', 'FilmsController@index');
