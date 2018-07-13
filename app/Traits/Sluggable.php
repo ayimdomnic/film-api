@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Traits;
 
 use Illuminate\Database\Eloquent\Model;
@@ -8,7 +7,7 @@ use Illuminate\Support\Str;
 
 trait Sluggable
 {
-	 /**
+    /**
      * Boot the sluggable trait for a model.
      *
      * @return void
@@ -45,12 +44,14 @@ trait Sluggable
     /**
      * Set the slug to the given value.
      *
-     * @param  string  $value
+     * @param string $value
+     *
      * @return $this
      */
     public function setSlug($value)
     {
         $this->setAttribute($this->getSlugColumnName(), $value);
+
         return $this;
     }
 

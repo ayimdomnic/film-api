@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateFilmsTable extends Migration
 {
@@ -21,7 +21,7 @@ class CreateFilmsTable extends Migration
             $table->string('slug')->unique();
             $table->date('release_date');
             $table->unsignedInteger('rating');
-            $table->float('ticket_price', 8,2);
+            $table->float('ticket_price', 8, 2);
             $table->string('country');
             $table->string('photo');
             $table->softDeletes();
