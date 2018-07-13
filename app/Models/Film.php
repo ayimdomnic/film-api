@@ -32,5 +32,5 @@ class Film extends Model
     	"created_at",
     	"deleted_at",
     	"updated_at"
-    ]
+    ];
 }
