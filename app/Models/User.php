@@ -1,37 +1,32 @@
 <?php
 
-
 namespace App\Models\User;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Traits\UuidTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
-/**
- * 
- */
 class User extends Authenticatable
 {
-	use Notifiable, SoftDeletes, UuidTrait;
+    use Notifiable, SoftDeletes, UuidTrait;
 
-	protected $table = 'users';
+    protected $table = 'users';
 
-	protected $fillable = [
-		"name",
-		"email",
-		"password",
-	];
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
 
-	protected $hidden = [
-		"password",
-		"remember_token"
-	];
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
 
-	protected $dates = [
-		"created_at",
-		"updated_at",
-		"deleted_at"
-	];
-	
+    protected $dates = [
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
 }

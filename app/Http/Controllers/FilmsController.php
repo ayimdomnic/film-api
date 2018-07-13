@@ -10,23 +10,21 @@ class FilmsController extends Controller
 
     public function __construct(Film $film)
     {
-    	$this->film = $film;
+        $this->film = $film;
     }
 
     public function index()
     {
-
     }
 
     public function show($slug)
     {
-    	$data = $this->film->newQuery()->where('slug', $slug)->first();
+        $data = $this->film->newQuery()->where('slug', $slug)->first();
 
-    	return view('films.show', compact('data'));
+        return view('films.show', compact('data'));
     }
 
     public function create(Request $request)
     {
-    	
     }
 }
