@@ -6,11 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Traits\UuidTrait;
 use App\Traits\Sluggable;
+use App\Traits\HasComment;
 
 
 class Film extends Model
 {
-    use SoftDeletes, UuidTrait, Sluggable;
+    use SoftDeletes, UuidTrait, Sluggable, HasComment;
 
     protected $table = "films";
 
